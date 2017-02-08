@@ -93,5 +93,8 @@ class TestISBN < Minitest::Test
 		isbn_num = "978 0 471 48648 3"
 		assert_equal(false,validate_input13(isbn_num))
 	end
-
+	def test_ISBN13_valid_checksum
+		isbn_num = "981 234 7537 52x"
+		assert_equal(false,validate_input13(isbn_num))
+	end
 end
