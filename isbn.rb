@@ -53,4 +53,8 @@ class TestIsbnNumber < Minitest::Test
     	isbn_num = "37358978*9048488"
     	assert_equal(false,check_isbn_number13(isbn_num))
     end
+    def test_13_with_valid_number_return_true
+        isbn_num = "978047148648x"
+        assert_equal(true,check_isbn_number13(isbn_num))
+    end
 end

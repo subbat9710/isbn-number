@@ -16,7 +16,7 @@ class TestISBN < Minitest::Test
 		assert_equal(false,validate_input10(isbn_num))
 	end
 
-	def test_ISBN10_valid_length_special_character
+	def test_ISBN10_invalid_length_special_character
 		isbn_num = "321%14653-0"
 		assert_equal(false,validate_input10(isbn_num))
 	end
