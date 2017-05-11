@@ -1,9 +1,13 @@
-# isbn-number
+# ISBN Number
 AIM:
+
 Create a program that will verify if a string is a valid ISBN number (see requirements below).
 Use a TDD approach.
+
 This is a big exercise - break it down into chunks!
+
 REQUIREMENTS FOR ISBN
+
 ISBN-10 is made up of 9 digits plus a check digit (which
 may be 'X') and ISBN-13 is made up of 12 digits plus a
 check digit. Spaces and hyphens may be included in a code,
@@ -20,6 +24,7 @@ each digit alternately by 1 or 3 (i.e., 1 x 1st digit,
 these products together, taking modulo 10 of the result
 and subtracting this value from 10, and then taking the
 modulo 10 of the result again to produce a single digit.
+
 Examples of valid ISBN-13:
 "9780470059029"
 "978-0-13-149505-0"
